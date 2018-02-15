@@ -105,9 +105,9 @@ def GetVMNics(vm):
 
 def GetArgs():
     if len(sys.argv) != 4:
-        host = raw_input("vCenter IP: ")
-        user = raw_input("Username: ")
-        password = raw_input("Password: ")
+        host = input("vCenter IP: ")
+        user = input("Username: ")
+        password = input("Password: ")
     else:
         host, user, password = sys.argv[1:]
     return host, user, password
